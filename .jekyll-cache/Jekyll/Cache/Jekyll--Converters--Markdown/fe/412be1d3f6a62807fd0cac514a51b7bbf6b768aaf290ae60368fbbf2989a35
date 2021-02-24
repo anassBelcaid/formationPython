@@ -1,0 +1,102 @@
+I"<h1 id="introduction">Introduction</h1>
+
+<p>In this unit, we will introduce some useful <em>python</em> modules to communicate with
+the operating system. This set of functions will allow the user to easily
+manipulate the <strong>files and folders</strong> of the your system. Using the module <code class="language-plaintext highlighter-rouge">os</code>,
+a user will benefit from all the OS-dependent tasks. The second module is <code class="language-plaintext highlighter-rouge">sys</code>
+will help us manipulate the arguments of program, change the input or output
+stream. Finally, we will dive in the <code class="language-plaintext highlighter-rouge">argparse</code> module for deep control of the
+program arguments.</p>
+
+<h1 id="table-of-contents">Table of Contents</h1>
+
+<ol>
+  <li><a href="#OsModule">Using the os functionality</a>
+    <ul>
+      <li><a href="#osIntro">Introduction</a></li>
+      <li><a href="#osBasic">Basic Function</a></li>
+      <li><a href="#osList">List Content</a></li>
+      <li><a href="#oscwd">Change Working Directory</a></li>
+      <li><a href="#osStructure">Directory Structure</a></li>
+      <li><a href="#osRemove">Remove Structure</a></li>
+      <li><a href="#osExample">Example</a></li>
+    </ul>
+  </li>
+  <li><a href="#SysModule">Python sys module</a></li>
+  <li><a href="#argsParse">Custom arguments</a></li>
+</ol>
+
+<h1 id="using-the-os-functionality">Using the Os functionality</h1>
+<p><a name="#OsModule"> </a></p>
+
+<h2 id="introduction-1">Introduction</h2>
+<p><a name="#osIntro"></a></p>
+
+<p>In this section, we will learn about the <code class="language-plaintext highlighter-rouge">os</code> module, which offer a clean
+API to communicate with your operating system. For this introduction we will
+learn to simple concept</p>
+
+<ul>
+  <li>How to import this module.</li>
+  <li>print the <strong>name</strong> of your system.</li>
+</ul>
+
+<p>The following listing will print the name of your operating system in the
+console:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#import the os module
+</span><span class="kn">import</span> <span class="nn">os</span>
+
+<span class="c1">#use the attribute name to print the system name
+</span><span class="k">print</span><span class="p">(</span><span class="s">"The system name is {}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">name</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h2 id="basic-function">Basic Function</h2>
+<p><a name="#osBasci"> </a></p>
+
+<p>For a simple, case let’s imagine that we want to know where our code is being
+executed. Otherwise know as the <strong>The working directory</strong>. The <code class="language-plaintext highlighter-rouge">os</code> module
+offer a <em>getter</em> to easily get the name of this folder as a string</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">os.getcwd()</code>: will return string representing the name of the current
+directory</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span>
+
+
+<span class="c1">#print the working directory
+</span><span class="k">print</span><span class="p">(</span><span class="s">"I'm on {} folder"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">getcwd</span><span class="p">()))</span>
+</code></pre></div></div>
+
+<p>Another useful information we would like to know is the <strong>content</strong> of a given
+folder.</p>
+
+<h2 id="list-folder-content">List folder content</h2>
+<p><a name="osList"> </a>
+Another useful function it <strong>get the content</strong> of a directory and the names of
+its <em>files</em> and <em>folders</em>. To illustrate this example, let’s suppose we have
+list of clients that are stored according to their town.</p>
+
+<p><img src="/assets/tree_clients.png" width="40%" height="100" /></p>
+
+<h2 id="change-working-directory">Change working directory</h2>
+<p><a name="#oswd"> </a></p>
+
+<h2 id="create-a-directory-structure">Create a directory Structure</h2>
+<p><a name="osStructure"> </a></p>
+
+<h2 id="remove-structure">Remove Structure</h2>
+<p><a name="osRemove"></a></p>
+
+<h2 id="example">Example</h2>
+<p><a name="osExample"> </a></p>
+
+<h1 id="python-sys-module">Python sys module</h1>
+<p><a name="#SysModule"> </a></p>
+
+<h1 id="custom-arguments">Custom arguments</h1>
+<p><a name="#argsParse"> </a></p>
+
+:ET
