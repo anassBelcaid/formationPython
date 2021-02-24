@@ -22,8 +22,8 @@ title: Formation Python scientifique
 email: anass.belcaid@gmail.com  
 description: >- # this means to ignore newlines until "baseurl:"
   A introductory course to the basic syntax of python and its use to solve  scientific problems
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: /formationPython # the subpath of your site, e.g. /blog
+url: anassBelcaid.github.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: anassbelcaid1
 github_username:  anassBelcaid
 
